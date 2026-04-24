@@ -1,0 +1,64 @@
+.mvv {
+  background: var(--color-gray-900);
+  position: relative;
+  overflow: hidden;
+}
+
+.diagonal {
+  position: absolute;
+  top: -60px;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: var(--color-white);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 100%);
+}
+
+.title {
+  color: var(--color-white) !important;
+}
+
+.title::after { background: var(--color-primary-light); }
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.card {
+  text-align: center;
+  padding: 40px 24px;
+  border: 1px solid rgba(255,255,255,0.1);
+  transition: all var(--transition-base);
+}
+
+.card:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-4px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  color: var(--color-primary-light);
+  margin-bottom: 20px;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  color: var(--color-white);
+  margin-bottom: 16px;
+  font-weight: 600;
+}
+
+.cardText {
+  color: rgba(255,255,255,0.65);
+  font-size: var(--fs-small);
+  line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .diagonal { height: 30px; }
+}

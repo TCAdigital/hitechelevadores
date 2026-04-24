@@ -1,0 +1,119 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: transparent;
+  transition: all var(--transition-base);
+}
+
+.scrolled {
+  background: var(--color-white);
+  box-shadow: var(--shadow-sm);
+}
+
+.inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 700;
+  z-index: 1001;
+}
+
+.logoHi { color: var(--color-primary); }
+.logoTech { color: var(--color-black); }
+
+.header:not(.scrolled) .logoHi,
+.header:not(.scrolled) .logoTech { color: var(--color-white); }
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.navLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-gray-800);
+  transition: color var(--transition-fast);
+  position: relative;
+}
+
+.navLink::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: var(--color-primary);
+  transition: width var(--transition-base);
+}
+
+.navLink:hover::after { width: 100%; }
+.navLink:hover { color: var(--color-primary); }
+
+.header:not(.scrolled) .navLink { color: rgba(255,255,255,0.9); }
+.header:not(.scrolled) .navLink:hover { color: var(--color-white); }
+
+.ctaDesktop { font-size: 0.875rem; padding: 10px 24px; }
+.navCta { display: none; }
+
+.burger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  padding: 4px;
+  z-index: 1001;
+}
+
+.burger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: var(--color-black);
+  transition: all var(--transition-base);
+}
+
+.header:not(.scrolled) .burger span { background: var(--color-white); }
+
+.burgerOpen span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.burgerOpen span:nth-child(2) { opacity: 0; }
+.burgerOpen span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+@media (max-width: 960px) {
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    max-width: 360px;
+    height: 100vh;
+    background: var(--color-white);
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+    transition: right var(--transition-base);
+    box-shadow: var(--shadow-lg);
+  }
+
+  .navOpen { right: 0; }
+
+  .navLink { color: var(--color-gray-800) !important; font-size: 1.1rem; }
+
+  .navCta { display: inline-flex; }
+  .ctaDesktop { display: none; }
+  .burger { display: flex; }
+  .burgerOpen span { background: var(--color-black) !important; }
+}
