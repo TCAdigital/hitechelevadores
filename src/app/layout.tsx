@@ -28,7 +28,11 @@ export const metadata: Metadata = {
     title: "Hi-Tech Elevadores e Plataformas | Soluções em Elevação",
     description:
       "Elevadores e plataformas de alto padrão para residências, comércios e indústrias.",
-    images: [{ url: "/images/hero-bg.png", width: 1200, height: 630, alt: "Hi-Tech Elevadores" }],
+    images: [{ url: "/og-image.png", width: 1200, height: 630, alt: "Hi-Tech Elevadores" }],
+  },
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-icon.png",
   },
   twitter: {
     card: "summary_large_image",
