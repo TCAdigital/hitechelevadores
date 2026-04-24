@@ -1,4 +1,23 @@
-.about { background: var(--color-white); }
+.about { 
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+.about::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 600px;
+  height: 600px;
+  background-image: url('/images/watermark.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 0.05;
+  pointer-events: none;
+  z-index: 0;
+}
 
 .grid {
   display: grid;
@@ -44,20 +63,23 @@
 
 .card {
   padding: 32px 24px;
-  background: var(--color-white);
-  border-left: 3px solid var(--color-primary);
-  box-shadow: var(--shadow-sm);
+  background: linear-gradient(135deg, #1c4e9e 0%, #2563b8 100%);
+  color: var(--color-white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
   transition: all var(--transition-base);
+  height: 100%;
 }
 
 .card:hover {
-  transform: translateY(-4px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.1);
 }
 
 .cardIcon {
   font-size: 1.75rem;
-  color: var(--color-primary);
+  color: var(--color-white);
   margin-bottom: 16px;
 }
 
@@ -65,10 +87,11 @@
   font-size: 1.1rem;
   font-weight: 600;
   margin-bottom: 8px;
+  color: var(--color-white);
 }
 
 .cardText {
-  color: var(--color-gray-600);
+  color: rgba(255,255,255,0.85);
   font-size: var(--fs-small);
   line-height: 1.7;
 }

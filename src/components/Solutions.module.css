@@ -12,7 +12,8 @@
   box-shadow: var(--shadow-sm);
   overflow: hidden;
   transition: all var(--transition-base);
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
+  height: 100%;
 }
 
 .card:hover {

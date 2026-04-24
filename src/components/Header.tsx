@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import styles from "./Header.module.css";
 
 const NAV_ITEMS = [
@@ -31,8 +32,14 @@ export default function Header() {
     <header className={`${styles.header} ${scrolled ? styles.scrolled : ""}`}>
       <div className={styles.inner}>
         <a href="#inicio" className={styles.logo}>
-          <span className={styles.logoHi}>Hi-</span>
-          <span className={styles.logoTech}>Tech</span>
+          <Image 
+            src="/logo-hitech-elevadores.png" 
+            alt="Hi-Tech Elevadores" 
+            width={180} 
+            height={50} 
+            className={styles.logoImg}
+            priority
+          />
         </a>
         <nav className={`${styles.nav} ${menuOpen ? styles.navOpen : ""}`}>
           {NAV_ITEMS.map((item) => (
@@ -40,11 +47,10 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a href="#contato" className={`btn btn-primary ${styles.navCta}`} onClick={() => setMenuOpen(false)}>
+          <a href="#contato" className={`${styles.btnHeaderBlack} ${styles.navCta}`} onClick={() => setMenuOpen(false)}>
             Solicitar Cotação
           </a>
         </nav>
-        <a href="#contato" className={`btn btn-primary ${styles.ctaDesktop}`}>Solicitar Cotação</a>
         <button
           className={`${styles.burger} ${menuOpen ? styles.burgerOpen : ""}`}
           onClick={() => setMenuOpen(!menuOpen)}

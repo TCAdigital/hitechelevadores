@@ -11,21 +11,23 @@
   display: flex;
   gap: 16px;
   padding: 24px;
-  background: var(--color-white);
+  background: linear-gradient(135deg, #1c4e9e 0%, #2563b8 100%);
+  color: var(--color-white);
   box-shadow: var(--shadow-sm);
   transition: all var(--transition-base);
-  border-bottom: 2px solid transparent;
+  border-radius: var(--radius-sm);
+  height: 100%;
 }
 
 .card:hover {
-  border-bottom-color: var(--color-primary);
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-md);
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+  filter: brightness(1.1);
 }
 
 .icon {
   font-size: 1.5rem;
-  color: var(--color-primary);
+  color: var(--color-white);
   flex-shrink: 0;
   margin-top: 4px;
 }
@@ -34,10 +36,11 @@
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 6px;
+  color: var(--color-white);
 }
 
 .text {
-  color: var(--color-gray-600);
+  color: rgba(255,255,255,0.8);
   font-size: var(--fs-small);
   line-height: 1.7;
 }

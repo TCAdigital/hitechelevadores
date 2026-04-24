@@ -11,14 +11,12 @@
   padding-bottom: 48px;
 }
 
-.logo {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 16px;
+.footerLogo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+  filter: brightness(0) invert(1);
 }
-
-.hi { color: var(--color-primary-light); }
 
 .desc {
   font-size: var(--fs-small);

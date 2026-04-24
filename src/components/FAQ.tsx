@@ -20,7 +20,7 @@ export default function FAQ() {
     <section id="faq" className={`section ${styles.faq}`}>
       <div className="container">
         <ScrollReveal>
-          <p className="section-label">Dúvidas</p>
+          <p className="section-label section-label--center">Dúvidas</p>
           <h2 className="section-title section-title--center">Perguntas Frequentes</h2>
         </ScrollReveal>
         <div className={styles.list}>

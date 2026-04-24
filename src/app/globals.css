@@ -20,8 +20,8 @@
   --fs-h3: clamp(1.25rem, 2vw, 1.5rem);
   --fs-body: 1rem;
   --fs-small: 0.875rem;
-  --radius-sm: 2px;
-  --radius-md: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
   --shadow-sm: 0 2px 8px rgba(0,0,0,0.08);
   --shadow-md: 0 4px 16px rgba(0,0,0,0.12);
   --shadow-lg: 0 8px 32px rgba(0,0,0,0.16);
@@ -89,6 +89,8 @@ ul { list-style: none; }
   margin-top: 12px;
 }
 
+.section-label--center { text-align: center; display: block; }
+
 .section-title--center { text-align: center; }
 .section-title--center::after { margin: 12px auto 0; }
 
@@ -100,7 +102,7 @@ ul { list-style: none; }
   padding: 14px 32px;
   font-size: var(--fs-body);
   font-weight: 600;
-  border-radius: var(--radius-sm);
+  border-radius: var(--radius-md);
   transition: all var(--transition-base);
   white-space: nowrap;
 }

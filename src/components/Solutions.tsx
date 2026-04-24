@@ -4,19 +4,19 @@ import styles from "./Solutions.module.css";
 
 const SOLUTIONS = [
   {
-    image: "/images/elevator-residential.png",
+    image: "/images/solution-res.jpg",
     title: "Elevadores Residenciais",
-    text: "Elevadores e plataformas que unem conforto, design e acessibilidade para sua residência.",
+    text: "Conforto e acessibilidade para sua casa com design sofisticado.",
   },
   {
-    image: "/images/elevator-commercial.png",
+    image: "/images/solution-com.jpg",
     title: "Elevadores Comerciais",
-    text: "Soluções robustas e elegantes para edifícios comerciais, escritórios e centros empresariais.",
+    text: "Alta performance e fluxo otimizado para edifícios de escritórios e shoppings.",
   },
   {
-    image: "/images/elevator-industrial.png",
+    image: "/images/solution-ind.jpg",
     title: "Elevadores Industriais",
-    text: "Elevadores de carga com alta capacidade para atender as demandas da sua operação industrial.",
+    text: "Soluções robustas para transporte de cargas e plataformas de alta resistência.",
   },
 ];
 
@@ -25,7 +25,7 @@ export default function Solutions() {
     <section id="solucoes" className={`section ${styles.solutions}`}>
       <div className="container">
         <ScrollReveal>
-          <p className="section-label">Soluções</p>
+          <p className="section-label section-label--center">Soluções</p>
           <h2 className="section-title section-title--center">Soluções sob medida para cada necessidade</h2>
         </ScrollReveal>
         <div className={styles.grid}>

@@ -32,7 +32,13 @@ export default function About() {
         </ScrollReveal>
         <ScrollReveal direction="right" delay={200}>
           <div className={styles.imageBlock}>
-            <Image src="/images/about.png" alt="Equipe Hi-Tech Elevadores" width={540} height={400} className={styles.image} />
+            <Image 
+              src="/images/about-final.jpg" 
+              alt="Instalação profissional Hi-Tech" 
+              width={600} 
+              height={500} 
+              className={styles.mainImg}
+            />
             <div className={styles.accent} />
           </div>
         </ScrollReveal>

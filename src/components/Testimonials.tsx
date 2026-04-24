@@ -21,7 +21,7 @@ export default function Testimonials() {
     <section id="depoimentos" className={`section ${styles.testimonials}`}>
       <div className="container">
         <ScrollReveal>
-          <p className="section-label">Depoimentos</p>
+          <p className="section-label section-label--center">Depoimentos</p>
           <h2 className="section-title section-title--center">O que nossos clientes dizem</h2>
         </ScrollReveal>
         <div className={styles.slider}>

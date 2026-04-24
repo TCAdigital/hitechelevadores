@@ -26,7 +26,7 @@ export default function MissionVisionValues() {
       <div className={styles.diagonal} />
       <div className="container">
         <ScrollReveal>
-          <p className="section-label" style={{ color: "rgba(255,255,255,0.6)" }}>Nossos Pilares</p>
+          <p className="section-label section-label--center" style={{ color: "rgba(255,255,255,0.6)" }}>Nossos Pilares</p>
           <h2 className={`section-title section-title--center ${styles.title}`}>O que nos guia</h2>
         </ScrollReveal>
         <div className={styles.grid}>

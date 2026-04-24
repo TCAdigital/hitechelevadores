@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaWhatsapp, FaInstagram, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import styles from "./Footer.module.css";
 
@@ -6,9 +7,13 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.grid}`}>
         <div className={styles.col}>
-          <h3 className={styles.logo}>
-            <span className={styles.hi}>Hi-</span>Tech
-          </h3>
+          <Image 
+            src="/logo-hitech-elevadores.png" 
+            alt="Hi-Tech Elevadores" 
+            width={180} 
+            height={50} 
+            className={styles.footerLogo}
+          />
           <p className={styles.desc}>Elevadores e Plataformas de alto padrão. Qualidade, segurança e tecnologia para seu projeto.</p>
           <div className={styles.socials}>
             <a href="https://wa.me/5517997230928" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><FaWhatsapp /></a>
@@ -43,6 +48,9 @@ export default function Footer() {
       <div className={styles.bottom}>
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Hi-Tech Elevadores e Plataformas. Todos os direitos reservados.</p>
+          <p style={{ marginTop: '8px', fontSize: '0.8rem', opacity: 0.7 }}>
+            Desenvolvido com ❤️ pela <a href="https://www.tcadigital.com.br/express" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none', fontWeight: '500' }}>TCA Digital Ai-Driven</a>
+          </p>
         </div>
       </div>
     </footer>

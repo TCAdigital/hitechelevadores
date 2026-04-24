@@ -5,11 +5,11 @@ export default function Hero() {
   return (
     <section id="inicio" className={styles.hero}>
       <Image
-        src="/images/hero-bg.png"
-        alt="Elevador moderno Hi-Tech"
+        src="/images/hero-final.jpg"
+        alt="Elevador Hi-Tech"
         fill
         priority
-        className={styles.bg}
+        className={styles.image}
         sizes="100vw"
       />
       <div className={styles.overlay} />
@@ -24,7 +24,7 @@ export default function Hero() {
           residências, comércios e indústrias.
         </p>
         <div className={styles.actions}>
-          <a href="#contato" className="btn btn-primary">Solicitar Cotação</a>
+          <a href="#contato" className={styles.btnHeroWhite}>Solicitar Cotação</a>
           <a href="#solucoes" className="btn btn-outline">Conheça Nossas Soluções</a>
         </div>
       </div>

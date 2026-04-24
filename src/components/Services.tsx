@@ -16,7 +16,7 @@ export default function Services() {
     <section className={`section ${styles.services}`}>
       <div className="container">
         <ScrollReveal>
-          <p className="section-label">Serviços</p>
+          <p className="section-label section-label--center">Serviços</p>
           <h2 className="section-title section-title--center">O que oferecemos para você</h2>
         </ScrollReveal>
         <div className={styles.grid}>
