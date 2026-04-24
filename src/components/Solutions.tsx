@@ -4,7 +4,7 @@ import styles from "./Solutions.module.css";
 
 const SOLUTIONS = [
   {
-    image: "/images/solution-res.jpg",
+    image: "/images/solution-ind.jpg",
     title: "Elevadores Residenciais",
     text: "Conforto e acessibilidade para sua casa com design sofisticado.",
   },
@@ -14,7 +14,7 @@ const SOLUTIONS = [
     text: "Alta performance e fluxo otimizado para edifícios de escritórios e shoppings.",
   },
   {
-    image: "/images/solution-ind.jpg",
+    image: "/images/solution-res.jpg",
     title: "Elevadores Industriais",
     text: "Soluções robustas para transporte de cargas e plataformas de alta resistência.",
   },
